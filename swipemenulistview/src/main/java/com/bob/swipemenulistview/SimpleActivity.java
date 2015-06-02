@@ -85,6 +85,14 @@ public class SimpleActivity extends Activity {
 		mListView.setMenuCreator(creator);//为listView添加菜单按钮生成器
 
 		// step 2. listener item click event
+ 	    /**
+             *
+             * @param position
+             * @param menu
+             * @param index
+             * @return
+             * index从左向右数依次为0, 1, 2, 3; position 是当前条目在listview中的位置
+             */
 		mListView.setOnMenuItemClickListener(new OnMenuItemClickListener() {//为菜单选项添加事件监听
 			@Override//监听菜单按钮
 			public boolean onMenuItemClick(int position, SwipeMenu menu, int index) {
